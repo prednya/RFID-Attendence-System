@@ -3,13 +3,13 @@
 #include <RFID.h>
 #include "FirebaseESP8266.h"  // Install Firebase ESP8266 library
 
-#define FIREBASE_HOST "test2-55006-default-rtdb.firebaseio.com" //Without http:// or https:// schemes
-#define FIREBASE_AUTH "TyzEBsqLLVs4gCzx0iE1GBHYFooThdw90EJYjpbe"
+#define FIREBASE_HOST "" //Without http:// or https:// schemes
+#define FIREBASE_AUTH "" //add yours
 RFID rfid(D8, D0);       //D8:pin of tag reader SDA. D0:pin of tag reader RST 
 unsigned char str[MAX_LEN]; //MAX_LEN is 16: size of the array 
 
-const char ssid[] = "Harsha’s iPhone";
-const char pass[] = "12345678";
+const char ssid[] = ""; //add yours
+const char pass[] = ""; //add yours
 
 String uidPath= "/";
 FirebaseData firebaseData;      //Define FirebaseESP8266 data object
