@@ -6,8 +6,8 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
-#define FIREBASE_HOST "test2-55006-default-rtdb.firebaseio.com" //Without http:// or https:// schemes
-#define FIREBASE_AUTH "TyzEBsqLLVs4gCzx0iE1GBHYFooThdw90EJYjpbe"
+#define FIREBASE_HOST "" //Without http:// or https:// schemes
+#define FIREBASE_AUTH "" //add yours
 RFID rfid(D8, D0);       //D10:pin of tag reader SDA. D9:pin of tag reader RST 
 unsigned char str[MAX_LEN]; //MAX_LEN is 16: size of the array 
 
@@ -15,8 +15,8 @@ WiFiUDP ntpUDP;
 const long utcOffsetInSeconds = 19800; //(UTC+5:30)
 NTPClient timeClient(ntpUDP, "pool.ntp.org");
 
-const char ssid[] = "Harsha’s iPhone";
-const char pass[] = "12345678";
+const char ssid[] = ""; //add yours
+const char pass[] = ""; //add yours
 
 String uidPath= "/";
 FirebaseJson json;
